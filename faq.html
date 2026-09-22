@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently Asked Questions — Pinnacle Tech Support</title>
+  <meta name="description" content="Find answers to common questions about Pinnacle Tech monthly website hosting, maintenance, development support, and WHMCS billing." />
+  
+  <meta property="og:title" content="Pinnacle Tech FAQ" />
+  <meta property="og:description" content="Answers about website hosting, ongoing development, WHMCS billing, and subscription terms." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-pt sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.svg" alt="Pinnacle Tech Logo" class="navbar-brand-img" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-pt-primary btn-sm-custom" data-whmcs-plan="basic">
+            Get Started <i class="bi bi-arrow-right-short fs-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ HERO & SEARCH -->
+  <section class="py-5 bg-slate-50 border-bottom text-center">
+    <div class="container py-4">
+      <span class="badge badge-pt-pill badge-pt-light mb-3">Help & Knowledge Base</span>
+      <h1 class="display-4 fw-bold">Frequently Asked Questions</h1>
+      <p class="text-slate-600 fs-5 max-w-700 mx-auto mt-2 mb-4">
+        Have questions about our monthly plans, hosting, or WHMCS portal? Find quick answers below.
+      </p>
+
+      <!-- Interactive FAQ Search -->
+      <div class="max-w-600 mx-auto position-relative">
+        <div class="input-group input-group-lg shadow-sm rounded-4 overflow-hidden">
+          <span class="input-group-text bg-white border-0 ps-3 text-slate-400"><i class="bi bi-search"></i></span>
+          <input type="text" id="faqSearchInput" class="form-class form-control border-0 py-3 text-slate-800" placeholder="Type a keyword (e.g. hosting, billing, cancel, build)..." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          
+          <div class="accordion accordion-pt" id="mainFaqAccordion">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqC1" aria-expanded="true" aria-controls="faqC1">
+                  What is included in the monthly price?
+                </button>
+              </h2>
+              <div id="faqC1" class="accordion-collapse collapse show" aria-labelledby="faqH1" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Our monthly subscription includes high-performance cloud website hosting, an SSL security certificate, automated daily/weekly backups, ongoing security updates, server maintenance, and technical support. Higher tier plans ($60 Advanced and $80 Pro) include expanded ongoing development support and priority response times.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC2" aria-expanded="false" aria-controls="faqC2">
+                  Do I need technical knowledge?
+                </button>
+              </h2>
+              <div id="faqC2" class="accordion-collapse collapse" aria-labelledby="faqH2" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  No! Pinnacle Tech is specifically designed so you never have to deal with cPanel, FTP, DNS records, or server configurations. Simply submit your requests through our WHMCS portal and our team handles the rest.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC3" aria-expanded="false" aria-controls="faqC3">
+                  Do you provide website hosting?
+                </button>
+              </h2>
+              <div id="faqC3" class="accordion-collapse collapse" aria-labelledby="faqH3" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Yes, high-speed cloud hosting with SSL security is bundled directly into your monthly package ($40, $60, or $80/mo). You do not need to purchase separate hosting.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC4" aria-expanded="false" aria-controls="faqC4">
+                  Can you build my website?
+                </button>
+              </h2>
+              <div id="faqC4" class="accordion-collapse collapse" aria-labelledby="faqH4" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Yes! Our development support team can help build or update your business website using your preferred layout and content as part of your ongoing plan subscription.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC5" aria-expanded="false" aria-controls="faqC5">
+                  Can I upgrade my plan?
+                </button>
+              </h2>
+              <div id="faqC5" class="accordion-collapse collapse" aria-labelledby="faqH5" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Yes, you can upgrade from Basic ($40/mo) to Advanced ($60/mo) or Pro ($80/mo) at any time directly through your WHMCS client dashboard with instant activation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC6" aria-expanded="false" aria-controls="faqC6">
+                  What happens after I choose a plan?
+                </button>
+              </h2>
+              <div id="faqC6" class="accordion-collapse collapse" aria-labelledby="faqH6" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  After selecting a plan, you are redirected to our WHMCS portal to complete account registration. You will then receive a welcome email and access to your client dashboard where you can submit onboarding details.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC7" aria-expanded="false" aria-controls="faqC7">
+                  How does billing work?
+                </button>
+              </h2>
+              <div id="faqC7" class="accordion-collapse collapse" aria-labelledby="faqH7" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Billing is a simple recurring monthly subscription managed through WHMCS. Invoices are generated automatically each month and can be paid securely via credit card or PayPal.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC8" aria-expanded="false" aria-controls="faqC8">
+                  Do I own my website?
+                </button>
+              </h2>
+              <div id="faqC8" class="accordion-collapse collapse" aria-labelledby="faqH8" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Yes, 100%! You retain full ownership of your website domain, branding, graphics, and content at all times.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC9" aria-expanded="false" aria-controls="faqC9">
+                  Can I cancel my subscription?
+                </button>
+              </h2>
+              <div id="faqC9" class="accordion-collapse collapse" aria-labelledby="faqH9" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Yes. We do not lock you into long-term contracts. You can cancel your monthly subscription at any time with a single click inside your WHMCS portal.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqH10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC10" aria-expanded="false" aria-controls="faqC10">
+                  How do I contact support?
+                </button>
+              </h2>
+              <div id="faqC10" class="accordion-collapse collapse" aria-labelledby="faqH10" data-bs-parent="#mainFaqAccordion">
+                <div class="accordion-body">
+                  Subscribers can submit support tickets 24/7 through the WHMCS client portal or reach out via email at support@pinnacletech.us or WhatsApp support line.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-pt">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <img src="images/logo.svg" alt="Pinnacle Tech Logo" class="mb-3 footer-logo" style=" filter: brightness(0) invert(1);" />
+          <p class="text-slate-400 small mb-3">
+            Pinnacle Tech provides affordable monthly website hosting, technical maintenance, security updates, and development support for businesses.
+          </p>
+          <div class="d-flex gap-3">
+             <a href="https://www.instagram.com/pinnacletech_us/" class="text-slate-400 hover-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/pinnacletechus" class="text-slate-400 hover-white fs-5"><i class="bi bi-facebook"></i></a>
+            <!--<a href="#" class="text-slate-400 hover-white fs-5"><i class="bi bi-linkedin"></i></a>-->
+            <!--<a href="#" class="text-slate-400 hover-white fs-5"><i class="bi bi-whatsapp"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="about.html">About Pinnacle Tech</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Monthly Packages</h5>
+          <ul>
+            <li><a href="pricing.html" data-whmcs-plan="basic">BASIC Package ($40/mo)</a></li>
+            <li><a href="pricing.html" data-whmcs-plan="advanced">ADVANCED Package ($60/mo)</a></li>
+            <li><a href="pricing.html" data-whmcs-plan="pro">PRO Package ($80/mo)</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact & Support</h5>
+          <p class="small text-slate-400 mb-2"><i class="bi bi-envelope me-2 text-primary"></i> support@pinnacletech.us</p>
+          <p class="small text-slate-400 mb-2"><i class="bi bi-whatsapp me-2 text-primary"></i> +1 909-639-0533</p>
+          <p class="small text-slate-400 mb-0"><i class="bi bi-geo-alt me-2 text-primary"></i> 1735 E Washington St, Colton, CA 92324, USA</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="small text-slate-500 mb-0">&copy; 2026 Pinnacle Tech. All rights reserved.</p>
+        <div class="d-flex gap-3 small">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="text-slate-700">|</span>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- STICKY MOBILE BOTTOM CTA BAR -->
+<div class="sticky-mobile-cta" id="stickyMobileCta">
+  <div class="sticky-mobile-cta-content">
+
+    <!-- Logo -->
+    <a href="index.html" class="sticky-mobile-logo">
+      <img src="images/logo.svg" alt="Pinnacle Tech Logo" style="height: 40px; filter: brightness(0) invert(1);">
+    </a>
+
+    <!-- CTA -->
+    <button
+      class="btn btn-pt-primary sticky-mobile-btn"
+      data-whmcs-plan="basic"
+      id="stickyMobileCtaBtn">
+      Get Started <i class="bi bi-arrow-right-short"></i>
+    </button>
+
+  </div>
+</div>
+
+  <!-- Bootstrap 5 JS Bundle & Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

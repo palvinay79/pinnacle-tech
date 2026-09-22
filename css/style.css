@@ -1,0 +1,601 @@
+/* ==========================================================================
+   Pinnacle Tech - Custom Stylesheet (Bootstrap 5 Extension)
+   ========================================================================== */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  --pt-primary: #2563eb;
+  --pt-primary-hover: #1d4ed8;
+  --pt-primary-light: #eff6ff;
+  --pt-secondary: #0f172a;
+  --pt-accent: #06b6d4;
+  --pt-accent-hover: #0891b2;
+  --pt-success: #10b981;
+  --pt-dark: #0f172a;
+  --pt-slate-900: #0f172a;
+  --pt-slate-800: #1e293b;
+  --pt-slate-700: #334155;
+  --pt-slate-600: #475569;
+  --pt-slate-500: #64748b;
+  --pt-slate-200: #e2e8f0;
+  --pt-slate-100: #f1f5f9;
+  --pt-slate-50: #f8fafc;
+  
+  --pt-font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --pt-font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --pt-radius-sm: 8px;
+  --pt-radius-md: 14px;
+  --pt-radius-lg: 20px;
+  --pt-radius-xl: 28px;
+
+  --pt-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --pt-shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --pt-shadow-lg: 0 20px 35px -10px rgba(15, 23, 42, 0.12), 0 10px 15px -5px rgba(15, 23, 42, 0.06);
+  --pt-shadow-highlight: 0 25px 50px -12px rgba(37, 99, 235, 0.25);
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--pt-font-body);
+  color: var(--pt-slate-800);
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-bottom: 70px; /* Space for sticky mobile CTA */
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--pt-font-heading);
+  font-weight: 700;
+  color: var(--pt-slate-900);
+  letter-spacing: -0.02em;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.bg-slate-50 {
+  background-color: var(--pt-slate-50) !important;
+}
+
+/* Navigation Bar */
+.navbar-pt {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--pt-slate-200);
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar-pt .nav-link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--pt-slate-700);
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-pt .nav-link:hover,
+.navbar-pt .nav-link.active {
+  color: var(--pt-primary);
+}
+
+.navbar-brand-img {
+  height: 65px;
+  width: auto;
+}
+
+/* Custom Buttons */
+.btn-pt-primary {
+  background-color: var(--pt-primary);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--pt-radius-md);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-pt-primary:hover {
+  background-color: var(--pt-primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-pt-secondary {
+  background-color: var(--pt-slate-100);
+  color: var(--pt-slate-800);
+  font-weight: 700;
+  border: 1px solid var(--pt-slate-200);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--pt-radius-md);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-pt-secondary:hover {
+  background-color: var(--pt-slate-200);
+  color: var(--pt-slate-900);
+  transform: translateY(-2px);
+}
+
+.btn-pt-dark {
+  background-color: var(--pt-slate-900);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--pt-radius-md);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-pt-dark:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-sm-custom {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+/* Badge Styles */
+.badge-pt-pill {
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.badge-pt-popular {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.badge-pt-light {
+  background-color: var(--pt-primary-light);
+  color: var(--pt-primary);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Hero Section */
+.hero-wrapper {
+  padding: 4rem 0 5rem 0;
+  background: radial-gradient(100% 100% at 50% 0%, rgba(37, 99, 235, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--pt-slate-600);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Feature Cards & Pricing Cards */
+.card-pt {
+  background: #ffffff;
+  border: 1px solid var(--pt-slate-200);
+  border-radius: var(--pt-radius-lg);
+  padding: 2.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  height: 100%;
+}
+
+.card-pt:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--pt-shadow-lg);
+  border-color: #cbd5e1;
+}
+
+/* Highlighted Pricing Card (ADVANCED - MOST POPULAR) */
+.card-pt-popular {
+  border: 2px solid var(--pt-primary);
+  background: #ffffff;
+  box-shadow: var(--pt-shadow-highlight);
+  transform: scale(1.02);
+}
+
+.card-pt-popular:hover {
+  transform: scale(1.03) translateY(-5px);
+}
+
+.popular-ribbon {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.pricing-price {
+  font-family: var(--pt-font-heading);
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: var(--pt-slate-900);
+  line-height: 1;
+}
+
+.pricing-price span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--pt-slate-500);
+}
+
+/* Feature Checklist inside Pricing Cards */
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.pricing-features li {
+  padding: 0.6rem 0;
+  color: var(--pt-slate-700);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pricing-features li i.bi-check-circle-fill {
+  color: var(--pt-primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.pricing-features li.disabled {
+  color: var(--pt-slate-500);
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* How It Works Steps */
+.step-card {
+  position: relative;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid var(--pt-slate-200);
+  border-radius: var(--pt-radius-lg);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: var(--pt-primary);
+  box-shadow: var(--pt-shadow-md);
+}
+
+.step-number {
+  font-family: var(--pt-font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color:#dee2e6;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+/* Benefits & Audience Cards */
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--pt-radius-md);
+  background-color: var(--pt-primary-light);
+  color: var(--pt-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Comparison Table */
+.comparison-table-wrapper {
+  border: 1px solid var(--pt-slate-200);
+  border-radius: var(--pt-radius-lg);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: var(--pt-shadow-sm);
+}
+
+.table-scroll-hint {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile only */
+@media (max-width: 767.98px) {
+  .table-scroll-hint {
+    scrollbar-width: thin;
+  }
+
+  .table-scroll-hint.is-hinting table {
+    animation: tableSwipeHint 1.2s ease-in-out;
+  }
+
+  @keyframes tableSwipeHint {
+    0% {
+      transform: translateX(0);
+    }
+
+    35% {
+      transform: translateX(-45px);
+    }
+
+    65% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+.table-pt {
+  margin-bottom: 0;
+  vertical-align: middle;
+  min-width: 850px;
+}
+
+.table-pt th {
+  background-color: var(--pt-slate-50);
+  font-family: var(--pt-font-heading);
+  font-weight: 700;
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid var(--pt-slate-200);
+}
+
+.table-pt td {
+  padding: 1rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--pt-slate-200);
+}
+
+.table-pt tr:last-child td {
+  border-bottom: none;
+}
+
+.table-pt .col-feature {
+  font-weight: 600;
+  color: var(--pt-slate-800);
+  width: 15%;
+}
+
+.table-pt .highlight-col {
+  background-color: rgba(37, 99, 235, 0.03);
+}
+
+/* FAQ Accordion */
+.accordion-pt .accordion-item {
+  border: 1px solid var(--pt-slate-200);
+  border-radius: var(--pt-radius-md) !important;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion-pt .accordion-button {
+  font-family: var(--pt-font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--pt-slate-900);
+  padding: 1.25rem 1.5rem;
+  background-color: #ffffff;
+  box-shadow: none !important;
+}
+
+.accordion-pt .accordion-button:not(.collapsed) {
+  color: var(--pt-primary);
+  background-color: var(--pt-primary-light);
+}
+
+.accordion-pt .accordion-body {
+  padding: 1.25rem 1.5rem;
+  color: var(--pt-slate-600);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Testimonial Placeholder Cards */
+.testimonial-card {
+  background-color: var(--pt-slate-50);
+  border: 1px dashed var(--pt-slate-200);
+  border-radius: var(--pt-radius-lg);
+  padding: 2rem;
+  height: 100%;
+}
+
+.testimonial-placeholder-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pt-slate-500);
+  background-color: var(--pt-slate-200);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Sticky Mobile Bottom CTA Bar */
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  background-color: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(12px);
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--pt-slate-700);
+  box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-mobile-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .sticky-mobile-cta {
+    display: none !important;
+  }
+}
+
+/* Footer */
+.footer-pt {
+  background-color: var(--pt-slate-900);
+  color: #94a3b8;
+  padding: 5rem 0 3rem 0;
+  font-size: 0.95rem;
+}
+.footer-pt .footer-logo 
+{
+  height:70px;
+}
+.footer-pt h5 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-pt a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-pt a:hover {
+  color: #ffffff;
+}
+
+.footer-pt ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-pt ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--pt-slate-800);
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
+
+/* Notification Toast / Modal Styles */
+.whmcs-notice-badge {
+  font-size: 0.75rem;
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   STICKY MOBILE CTA
+   ========================================================= */
+
+.sticky-mobile-cta {
+  display: none;
+}
+
+
+/* Mobile and Tablet Sticky CTA */
+@media (max-width: 991.98px) {
+
+  .sticky-mobile-cta {
+    display: block !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+  .footer-pt {
+  padding: 3rem 0 3rem 0;
+}
+
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+
+  .sticky-mobile-cta {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sticky-mobile-logo img {
+    height: 34px;
+  }
+
+  .sticky-mobile-btn {
+    padding: 8px 12px !important;
+    font-size: 13px;
+  }
+}

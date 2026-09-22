@@ -1,0 +1,6 @@
+{
+  "name": "Pinnacle Tech",
+  "description": "Premium static website for Pinnacle Tech offering website hosting, maintenance, and development support subscription packages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
