@@ -117,8 +117,8 @@ function showWHMCSModal(planName, planKey, targetUrl) {
                   <i class="bi bi-box-arrow-up-right"></i>
                 </div>
                 <div>
-                  <h5 class="modal-title mb-0 fw-bold" id="whmcsModalLabel">WHMCS Order Link Notice</h5>
-                  <small class="text-slate-400">Pinnacle Tech Integration Helper</small>
+                  <h5 class="modal-title mb-0 fw-bold" id="whmcsModalLabel">Client Portal Order Notice</h5>
+                  <small class="text-slate-400">Pinnacle Tech Client Portal</small>
                 </div>
               </div>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -128,7 +128,7 @@ function showWHMCSModal(planName, planKey, targetUrl) {
                 <i class="bi bi-info-circle-fill me-2"></i> You selected the <strong id="modalPlanName"></strong>.
               </div>
               <p class="mb-3 fs-6">
-                In production, clicking this button redirects your customer directly to your <strong>WHMCS</strong> order cart to complete their account creation and payment.
+                Clicking this button redirects you directly to our secure <strong>Client Portal</strong> to complete your account creation and activate subscription services.
               </p>
               <div class="bg-slate-100 p-3 rounded-3 border mb-3 font-monospace fs-7">
                 <div class="text-slate-500 mb-1">// Currently configured URL:</div>

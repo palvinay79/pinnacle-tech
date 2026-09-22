@@ -1,6 +1,6 @@
 {
   "name": "Pinnacle Tech",
-  "description": "Premium static website for Pinnacle Tech offering website hosting, maintenance, and development support subscription packages.",
+  "description": "A website partner for small businesses. We design, host, maintain and continuously improve your website for one predictable monthly price.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

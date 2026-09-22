@@ -179,6 +179,27 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 0.875rem;
 }
 
+.btn-pt-outline {
+  background-color: transparent;
+  color: var(--pt-slate-700);
+  font-weight: 600;
+  border: 1px solid var(--pt-slate-300);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--pt-radius-md);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.btn-pt-outline:hover {
+  background-color: var(--pt-slate-100);
+  color: var(--pt-primary);
+  border-color: var(--pt-primary);
+}
+
 /* Badge Styles */
 .badge-pt-pill {
   padding: 0.4rem 1rem;
