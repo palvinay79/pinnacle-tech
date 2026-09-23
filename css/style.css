@@ -602,8 +602,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     z-index: 99999;
   }
   .footer-pt {
-  padding: 3rem 0 3rem 0;
-}
+    padding: 3rem 0 6.5rem 0;
+  }
 
 }
 
