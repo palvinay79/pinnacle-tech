@@ -1,15 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9EJV27P09"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L9EJV27P09');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing & Packages — Pinnacle Tech ($40, $60, $80/mo)</title>
   <meta name="description" content="Compare Pinnacle Tech monthly packages: Basic ($40/mo), Advanced ($60/mo Most Popular), and Pro ($80/mo). Includes hosting, SSL, maintenance, and ongoing dev support." />
   
-  <meta property="og:title" content="Pinnacle Tech Monthly Pricing Packages" />
+  <link rel="canonical" href="https://pinnacletech.us/pricing.html" />
+  <meta property="og:title" content="Pricing & Packages — Pinnacle Tech ($40, $60, $80/mo)" />
   <meta property="og:description" content="Compare $40/mo, $60/mo, and $80/mo monthly packages. Hosting + Maintenance + Dev Support included." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pinnacletech.us/pricing.html" />
+  <meta property="og:site_name" content="Pinnacle Tech" />
+  <meta property="og:image" content="https://pinnacletech.us/images/hero-graphic.svg" />
+  <meta property="og:image:alt" content="Pinnacle Tech Pricing Packages" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pricing & Packages — Pinnacle Tech ($40, $60, $80/mo)" />
+  <meta name="twitter:description" content="Compare $40/mo, $60/mo, and $80/mo monthly packages. Hosting + Maintenance + Dev Support included." />
+  <meta name="twitter:image" content="https://pinnacletech.us/images/hero-graphic.svg" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- SCHEMA.ORG PRODUCT PRICING STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Pinnacle Tech Website Subscription Service",
+    "image": "https://pinnacletech.us/images/hero-graphic.svg",
+    "description": "Monthly managed website subscription for small businesses including cloud hosting, SSL, automated daily backups, and continuous developer support.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Pinnacle Tech"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "40.00",
+      "highPrice": "80.00",
+      "offerCount": "3",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Basic Care Plan",
+          "price": "40.00",
+          "priceCurrency": "USD",
+          "url": "https://pinnacletech.us/pricing.html",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "40.00",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Advanced Care Plan",
+          "price": "60.00",
+          "priceCurrency": "USD",
+          "url": "https://pinnacletech.us/pricing.html",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "60.00",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro Care Plan",
+          "price": "80.00",
+          "priceCurrency": "USD",
+          "url": "https://pinnacletech.us/pricing.html",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "80.00",
+            "priceCurrency": "USD",
+            "unitText": "MONTH"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +172,7 @@
               <ul class="pricing-features">
                 <li><i class="bi bi-check-circle-fill"></i> Website hosting</li>
                 <li><i class="bi bi-check-circle-fill"></i> SSL certificate</li>
-                <li><i class="bi bi-check-circle-fill"></i> Website backups</li>
+                <li><i class="bi bi-check-circle-fill"></i> Automated daily backups</li>
                 <li><i class="bi bi-check-circle-fill"></i> Website maintenance</li>
                 <li><i class="bi bi-check-circle-fill"></i> Basic technical support</li>
                 <li><i class="bi bi-check-circle-fill"></i> Basic development support</li>
@@ -98,6 +183,10 @@
               <button class="btn btn-pt-secondary w-100" data-whmcs-plan="basic">
                 Choose Basic <i class="bi bi-arrow-right"></i>
               </button>
+              <div class="pricing-trust-badges text-center">
+                <span><i class="bi bi-shield-check text-success me-1"></i> 30-Day Guarantee</span> &bull; 
+                <span><i class="bi bi-x-circle me-1"></i> Cancel Anytime</span>
+              </div>
             </div>
           </div>
         </div>
@@ -132,6 +221,10 @@
               <button class="btn btn-pt-primary w-100" data-whmcs-plan="advanced">
                 Choose Advanced <i class="bi bi-arrow-right"></i>
               </button>
+              <div class="pricing-trust-badges text-center">
+                <span><i class="bi bi-shield-check text-success me-1"></i> 30-Day Guarantee</span> &bull; 
+                <span><i class="bi bi-lightning-charge-fill text-warning me-1"></i> 24h Setup SLA</span>
+              </div>
             </div>
           </div>
         </div>
@@ -160,10 +253,43 @@
               <button class="btn btn-pt-dark w-100" data-whmcs-plan="pro">
                 Choose Pro <i class="bi bi-arrow-right"></i>
               </button>
+              <div class="pricing-trust-badges text-center">
+                <span><i class="bi bi-shield-check text-success me-1"></i> 30-Day Guarantee</span> &bull; 
+                <span><i class="bi bi-person-check-fill text-primary me-1"></i> Dedicated Lead</span>
+              </div>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- 30-DAY RISK-FREE GUARANTEE BANNER -->
+      <div class="mt-5">
+        <div class="guarantee-box-pt">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-2 text-center text-md-start">
+              <div class="bg-success bg-opacity-15 text-success rounded-circle d-inline-flex align-items-center justify-content-center p-3 fs-1" style="width: 72px; height: 72px;">
+                <i class="bi bi-shield-fill-check"></i>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h4 class="h5 fw-bold text-slate-900 mb-1">
+                Our 30-Day Risk-Free Satisfaction Guarantee
+              </h4>
+              <p class="text-slate-600 mb-0 small">
+                Try Pinnacle Tech completely risk-free. If you are not satisfied with your website onboarding or support service during the first 30 days, we will promptly refund 100% of your money. No complicated exit terms.
+              </p>
+            </div>
+            <div class="col-md-3 text-center text-md-end">
+              <div class="d-inline-flex flex-column align-items-center align-items-md-end">
+                <span class="badge bg-success text-white fw-bold px-3 py-2 mb-1">
+                  <i class="bi bi-check-circle-fill me-1"></i> 100% Risk Free
+                </span>
+                <span class="text-slate-500 extra-small" style="font-size: 0.75rem;">Month-to-month flexibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -309,8 +435,8 @@
               </tr>
               <tr>
                 <td class="col-feature">Automated Backups</td>
-                <td class="text-center">Weekly</td>
-                <td class="text-center highlight-col fw-bold text-primary">Daily</td>
+                <td class="text-center">Daily Backups</td>
+                <td class="text-center highlight-col fw-bold text-primary">Daily Backups</td>
                 <td class="text-center fw-bold text-primary">Daily & Real-Time</td>
               </tr>
               <tr>
@@ -357,6 +483,105 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE TRANSPARENCY: WHAT'S INCLUDED VS CUSTOM WORK -->
+  <section class="py-5 bg-white border-bottom" id="scopeSection">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge badge-pt-pill badge-pt-light mb-2">
+          <i class="bi bi-shield-check text-primary me-1"></i> Total Transparency
+        </span>
+        <h2 class="h1 fw-bold">Clear Scope. Zero Surprise Invoices.</h2>
+        <p class="text-slate-600 fs-5">
+          We pride ourselves on honest, upfront partnerships. Here is a clear breakdown of tasks included in your monthly subscription versus custom standalone projects.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. What's Included 100% -->
+        <div class="col-lg-6">
+          <div class="h-100 p-4 p-md-5 rounded-4 border bg-slate-50 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="flex-shrink-0 bg-success bg-opacity-10 text-success rounded-3 p-3 fs-3 d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+              <div>
+                <h3 class="h4 fw-bold mb-0 text-slate-900">Always Included in Your Plan</h3>
+                <span class="text-success small fw-semibold">No hourly bills &bull; Unlimited peace of mind</span>
+              </div>
+            </div>
+
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0 text-slate-700">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>High-Speed Cloud Hosting & SSL:</strong> Full server provisioning, domain linking, and continuous SSL renewal.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>Automated Daily Backups:</strong> Secure off-site cloud snapshots with quick one-click rollback if ever needed.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>Content & Graphic Updates:</strong> Swapping photos, updating text, publishing announcements, and changing business hours.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>Forms & Contact Inquiries:</strong> Updating contact form fields, lead routing emails, and phone number links.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>Core Security & Patching:</strong> Applying critical security updates, spam filters, and preventative maintenance.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-lg text-success fw-bold fs-5 mt-n1"></i>
+                <span><strong>24-Hour Resolution Policy:</strong> Prompt ticket replies and resolution via your dedicated Client Portal.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. What Requires a Custom Quote -->
+        <div class="col-lg-6">
+          <div class="h-100 p-4 p-md-5 rounded-4 border bg-white shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="flex-shrink-0 bg-primary bg-opacity-10 text-primary rounded-3 p-3 fs-3 d-flex align-items-center justify-content-center" style="width: 54px; height: 54px;">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <div>
+                <h3 class="h4 fw-bold mb-0 text-slate-900">Custom Scope (Available on Request)</h3>
+                <span class="text-primary small fw-semibold">Discounted subscriber rates &bull; Clear upfront proposals</span>
+              </div>
+            </div>
+
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0 text-slate-600">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right text-primary fw-bold mt-1"></i>
+                <span><strong>Complex Custom Web Applications:</strong> Multi-sided marketplaces, custom SaaS platforms, or proprietary software logic.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right text-primary fw-bold mt-1"></i>
+                <span><strong>Native iOS & Android Mobile Apps:</strong> Standalone mobile applications for the Apple App Store or Google Play.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right text-primary fw-bold mt-1"></i>
+                <span><strong>Enterprise ERP & CRM Deep Integrations:</strong> Custom middleware development connecting legacy enterprise databases.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-arrow-right text-primary fw-bold mt-1"></i>
+                <span><strong>Large-Scale Product Catalogs:</strong> E-commerce builds with 500+ SKUs, automated drop-shipping feeds, or multi-warehouse logic.</span>
+              </li>
+            </ul>
+
+            <div class="mt-4 p-3 bg-slate-50 rounded-3 border">
+              <p class="small text-slate-600 mb-0">
+                <i class="bi bi-info-circle text-primary me-1"></i> Have a question about whether a specific edit is covered? <strong>Over 95% of day-to-day business requests are completely covered</strong> by your monthly plan.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -445,6 +670,18 @@
 
   </div>
 </div>
+
+  <!-- FLOATING QUICK WHATSAPP CONSULTATION WIDGET -->
+  <a href="https://wa.me/19096390533?text=Hi%20Pinnacle%20Tech!%20I%20have%20a%20question%20about%20your%20pricing%20plans." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="floating-whatsapp-widget" 
+     id="floatingWhatsAppPricingBtn"
+     aria-label="Chat with Pinnacle Tech on WhatsApp">
+    <span class="floating-whatsapp-pulse"></span>
+    <span class="floating-whatsapp-icon"><i class="bi bi-whatsapp"></i></span>
+    <span>Ask a Question</span>
+  </a>
 
   <!-- Bootstrap 5 JS Bundle & Custom JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pinnacle-tech.com/sitemap.xml
+Sitemap: https://pinnacletech.us/sitemap.xml
+
